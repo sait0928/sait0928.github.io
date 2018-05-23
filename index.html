@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <title>WP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/smart.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/works.css">
-    <link rel="stylesheet" href="css/news.css">
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="smart.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="works.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
-    <script type="text/javascript" src="js/jquery.bgswitcher.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript" src="jquery.bgswitcher.js"></script>
     <script>
       $("document").ready(function() {
         var w = $(window).width(); //ウィンドウ幅の値を取得して代入
@@ -24,16 +24,16 @@
         if(w >= sp) { //PCでの処理
           $(".main").bgswitcher({
             images: [ //切り替えに使う画像のURLを記述
-              "img/bg.jpg",
-              "img/bg2.jpg"
+              "bg.jpg",
+              "bg2.jpg"
             ],
             effect: "fade" //切り替えのエフェクト指定(デフォルトではfade, 他に blind, clip, slide, drop など)
           });
         } else { //SPでの処理
           $(".main").bgswitcher({
             images: [
-              "img/sp_bg.jpg",
-              "img/sp_bg2.jpg"
+              "sp_bg.jpg",
+              "sp_bg2.jpg"
             ],
             effect: "fade"
           });
@@ -87,7 +87,7 @@
           <ul>
             <li class="article">
               <figure>
-                <img src="img/works.jpg" alt="">
+                <img src="works.jpg" alt="">
                 <figcaption class="a-title">
                   <h3>タイトル</h3>
                   <p>2018.00.00</p>
@@ -98,7 +98,7 @@
 
             <li class="article">
               <figure>
-                <img src="img/works2.jpg" alt="">
+                <img src="works2.jpg" alt="">
                 <figcaption class="a-title">
                   <h3>タイトル</h3>
                   <p>2018.00.00</p>
@@ -109,7 +109,7 @@
 
             <li class="article">
               <figure>
-                <img src="img/works3.jpg" alt="">
+                <img src="works3.jpg" alt="">
                 <figcaption class="a-title">
                   <h3>タイトル</h3>
                   <p>2018.00.00</p>
@@ -120,7 +120,7 @@
 
             <li class="article">
               <figure>
-                <img src="img/works4.jpg" alt="">
+                <img src="works4.jpg" alt="">
                 <figcaption class="a-title">
                   <h3>タイトル</h3>
                   <p>2018.00.00</p>
@@ -131,7 +131,7 @@
 
             <li class="article">
               <figure>
-                <img src="img/works5.jpg" alt="">
+                <img src="works5.jpg" alt="">
                 <figcaption class="a-title">
                   <h3>タイトル</h3>
                   <p>2018.00.00</p>
@@ -142,7 +142,7 @@
 
             <li class="article">
               <figure>
-                <img src="img/works6.jpg" alt="">
+                <img src="works6.jpg" alt="">
                 <figcaption class="a-title">
                   <h3>タイトル</h3>
                   <p>2018.00.00</p>
@@ -206,7 +206,7 @@
           </li>
           <li>
             <div class="img-box">
-              <img src="img/profile.jpg" alt="">
+              <img src="profile.jpg" alt="">
             </div>
           </li>
         </ul>
