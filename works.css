@@ -51,10 +51,6 @@
   transition: all 0.9s ease-out;
 }
 
-.article figure:hover:after {
-  transform: scale(1);
-}
-
 .article figcaption p,
 .article figcaption h3 {
   position: absolute;
@@ -76,19 +72,8 @@
   transform: translateY(30px);
 }
 
-.article figure:hover figcaption p,
-.article figure:hover figcaption h3 {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .article figure img {
   transition: all 1.2s ease-out;
-}
-
-.article figure:hover img {
-  opacity: 0.4;
-  transform: scale(1.3);
 }
 
 .more {
@@ -107,10 +92,6 @@ button#more-btn {
   transition: 0.3s ease;
 }
 
-button#more-btn:hover {
-  background-color: #666;
-}
-
 button#more-btn a {
   text-decoration: none;
   color: #fff;
@@ -124,17 +105,37 @@ button#more-btn a {
 
   transition: 0.3s ease;
 }
-
-button#more-btn a:hover {
-  font-size: 16px;
-}
-
 .article a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .article figure:hover figcaption p,
+  .article figure:hover figcaption h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .article figure:hover:after {
+    transform: scale(1);
+  }
+  
+  .article figure:hover img {
+    opacity: 0.4;
+    transform: scale(1.3);
+  }
+  
+  button#more-btn:hover {
+    background-color: #666;
+  }
+  
+  button#more-btn a:hover {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
