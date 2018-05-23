@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <title>WP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/smart.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/jquery.bgswitcher.js"></script>
+    <script>
+      $("document").ready(function() {
+        var w = $(window).width(); //ウィンドウ幅の値を取得して代入
+        var sp = 768; //ブレイクポイントの値を代入
+        if(w >= sp) { //PCでの処理
+          $(".main").bgswitcher({
+            images: [ //切り替えに使う画像のURLを記述
+              "img/bg.jpg",
+              "img/bg2.jpg"
+            ],
+            effect: "fade" //切り替えのエフェクト指定(デフォルトではfade, 他に blind, clip, slide, drop など)
+          });
+        } else { //SPでの処理
+          $(".main").bgswitcher({
+            images: [
+              "img/sp_bg.jpg",
+              "img/sp_bg2.jpg"
+            ],
+            effect: "fade"
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+
+    <!--HEADER-->
+    <header>
+      <div class="header-wrap">
+        <h1><a href="#"><img src="http://manabyna.xsrv.jp/html_study/study09/img/logo.png" alt=""></a></h1>
+        <div id="navToggle">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <div class="main">
+      <div class="container">
+        <div class="copy">
+          YS Portfolio Site
+        </div>
+        <div class="copy-text">
+          ポートフォリオサイトです。<br>
+          manabyの支援を受けてカスタマイズさせていただいております。
+        </div>
+        <button id="m-btn"><a href="#works">SCROLL</a></button>
+      </div>
+    </div>
+
+    <!--WORKS-->
+    <section id="works">
+      <div class="wrap">
+        <div class="s-title">WORKS</div>
+        <div class="w-content">
+          <ul>
+            <li class="article">
+              <figure>
+                <img src="img/works.jpg" alt="">
+                <figcaption class="a-title">
+                  <h3>タイトル</h3>
+                  <p>2018.00.00</p>
+                </figcaption>
+                <a href=""></a>
+              </figure>
+            </li>
+
+            <li class="article">
+              <figure>
+                <img src="img/works2.jpg" alt="">
+                <figcaption class="a-title">
+                  <h3>タイトル</h3>
+                  <p>2018.00.00</p>
+                </figcaption>
+                <a href=""></a>
+              </figure>
+            </li>
+
+            <li class="article">
+              <figure>
+                <img src="img/works3.jpg" alt="">
+                <figcaption class="a-title">
+                  <h3>タイトル</h3>
+                  <p>2018.00.00</p>
+                </figcaption>
+                <a href=""></a>
+              </figure>
+            </li>
+
+            <li class="article">
+              <figure>
+                <img src="img/works4.jpg" alt="">
+                <figcaption class="a-title">
+                  <h3>タイトル</h3>
+                  <p>2018.00.00</p>
+                </figcaption>
+                <a href=""></a>
+              </figure>
+            </li>
+
+            <li class="article">
+              <figure>
+                <img src="img/works5.jpg" alt="">
+                <figcaption class="a-title">
+                  <h3>タイトル</h3>
+                  <p>2018.00.00</p>
+                </figcaption>
+                <a href=""></a>
+              </figure>
+            </li>
+
+            <li class="article">
+              <figure>
+                <img src="img/works6.jpg" alt="">
+                <figcaption class="a-title">
+                  <h3>タイトル</h3>
+                  <p>2018.00.00</p>
+                </figcaption>
+                <a href=""></a>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="more">
+          <button id="more-btn"><a href="#">MORE</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!--NEWS-->
+    <section id="news">
+      <div class="wrap">
+        <div class="s-title">NEWS</div>
+        <ul class="n-content">
+          <li>
+            <div class="n-date">2018.00.00</div>
+            <div class="n-title">NEWS TITLE</div>
+            <a href=""></a>
+          </li>
+          <li>
+            <div class="n-date">2018.00.00</div>
+            <div class="n-title">NEWS TITLE</div>
+            <a href=""></a>
+          </li>
+          <li>
+            <div class="n-date">2018.00.00</div>
+            <div class="n-title">NEWS TITLE</div>
+            <a href=""></a>
+          </li>
+          <li>
+            <div class="n-date">2018.00.00</div>
+            <div class="n-title">NEWS TITLE</div>
+            <a href=""></a>
+          </li>
+          <li>
+            <div class="n-date">2018.00.00</div>
+            <div class="n-title">NEWS TITLE</div>
+            <a href=""></a>
+          </li>
+        </ul>
+        <div class="all"><a href="">一覧を見る</a></div>
+      </div>
+    </section>
+
+    <div class="wrap p-c-wrap">
+      <!--PROFILE-->
+      <section id="profile">
+        <div class="s-title">PROFILE</div>
+        <ul>
+          <li>
+            <div class="text-box">
+              <p>manaby</p>
+              <p>manabyです！<br>就労移行支援を行っています！</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <img src="img/profile.jpg" alt="">
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!--CONTACT-->
+      <section id="contact">
+        <div class="s-title">CONTACT</div>
+        <p>お問い合わせはこちら！（Coming Soon）</p>
+      </section>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="copyright">
+        <p>copyright&copy;manaby-nagamachi</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
