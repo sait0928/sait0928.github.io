@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.n-content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.n-content div {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.n-date {
+  width: 120px;
+  padding-left: 16px;
+}
+
+.n-content li {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.n-content li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.n-content li:nth-child(2n+1) {
+  background-color: #eee;
+}
+
+.n-content li:hover {
+  background-color: #ccc;
+  transform: translateX(20px);
+}
+
+.all {
+  width: 100%;
+  line-height: 50px;
+  text-align: right;
+}
+
+.all a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 16px;
+  font-size: 14px;
+}
+
+.all a:hover {
+  text-decoration: underline;
+}

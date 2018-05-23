@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.p-c-wrap {
+  height: 300px;
+}
+
+#profile {
+  width: 45%;
+  float: left;
+  display: inline-block;
+}
+
+.text-box {
+  font-size: 14px;
+  margin-top: 30px;
+  width: 45%;
+  float: left;
+}
+
+.text-box p:nth-child(1) {
+  font-weight: bold;
+}
+
+.text-box p:nth-child(2) {
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+.img-box {
+  margin-top: 30px;
+  width: 45%;
+  float: right;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+@media screen and (max-width:768px) {
+
+  .p-c-wrap {
+    height: 600px;
+  }
+
+  #profile {
+    width: 100%;
+    float: none;
+  }
+
+  .text-box {
+    width: 100%;
+    float: none;
+  }
+
+  .img-box {
+    width: 100%;
+    float: none;
+  }
+
+}

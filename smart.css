@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+
+.container {
+  width: 94%;
+}
+
+.copy {
+  top: -20%;
+  width: 100%;
+  font-size: 28px;
+}
+
+.copy-text {
+  top: 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+button#m-btn {
+  top: 30%;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+}
+
+button#m-btn a {
+  line-height: 40px;
+}
+
+}
